@@ -2,11 +2,11 @@
 
 #    ____ ____  ______        ____  __ 
 #   | __ ) ___||  _ \ \      / /  \/  |  - z0mbi3
-#   |  _ \___ \| |_) \ \ /\ / /| |\/| |  - https://github.com/gh0stzk/dotfiles
-#   | |_) |__) |  __/ \ V  V / | |  | |  - z0mbi3.zk@protonmail.com
+#   |  _ \___ \| |_) \ \ /\ / /| |\/| |  
+#   | |_) |__) |  __/ \ V  V / | |  | |  
 #   |____/____/|_|     \_/\_/  |_|  |_|
-#                                    z0mbi3 config..
-
+#                                   - Modified by S4NKALP
+				    - https://github.com/S4NKALP/dotfiles
 
 ########### Def vars
 
@@ -248,4 +248,3 @@ RandomWall
 #nitrogen --restore &
 xsetroot -cursor_name left_ptr
 
-bspc rule -a URxvt:urxvt_keys_help state=floating
