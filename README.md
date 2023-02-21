@@ -152,7 +152,8 @@ So yes... i called the Rices with the names of some of my ex girlfriends.
 - <code>super + ctrl + r</code> Restart bspwm.
 - <code>super + w</code> WifiMenu
 - <code>super + F1 </code> Keybind Help.
-- 
+- <code>alt + shift + e </code> Rofi Emoji.
+- <code> alt + shift + {a,d} </code> Switch Workspace.
 
 And more.. You need to look sxhkdrc file for more.
 
