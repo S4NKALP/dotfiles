@@ -18,7 +18,7 @@ export defnetif=$(ip route | grep '^default' | awk '{print $5}' | head -n1)
 
 ## You can edit this.
 BSPWM_BORDER='0'
-BSPWM_GAP='10'
+BSPWM_GAP='0'
 
 ########### Functions
 
