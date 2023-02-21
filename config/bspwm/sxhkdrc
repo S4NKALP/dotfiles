@@ -1,0 +1,199 @@
+#     _____  _| |__ | | ____| |_ __ ___ 
+#    / __\ \/ / '_ \| |/ / _` | '__/ __|  - z0mbi3
+#    \__ \>  <| | | |   < (_| | | | (__   - https://github.com/gh0stzk/dotfiles
+#    |___/_/\_\_| |_|_|\_\__,_|_|  \___|  - z0mbi3.zk@protonmail.com
+#                             z0mbi3 config..
+
+# terminal emulator
+super + x
+	Term --ot
+	
+# Floating Terminal
+alt + x
+	Term --oft
+
+#cheatsheet
+super + F1
+	sh ~/.config/bspwm/show_help.sh
+# Apps
+alt + {f,c,s,g,v,o,d,e,n,z,r,t,w,m}
+       {firefox, \
+	    code, \
+	    subl, \
+	    gimp, \
+	    virt-manager, \
+	    obs, \
+	    discord, \
+	    oneshot-qt, \
+	    thunar, \
+        google-chrome-stable, \
+        Term --or, \
+        telegram-desktop, \
+        whatsapp-nativefier --disable-gpu, \
+        env LD_PRELOAD=/usr/lib/spotify-adblock.so spotify --disable-gpu --no-zygote %U, \ }
+        
+#hide
+super + h
+		HideBar -h
+#unhide
+super + u 
+		HideBar -u
+
+# Take a ss
+Print
+	sh $HOME/.local/bin/takeshot --now
+	
+# Take ss in 5 second
+alt + Print	
+	sh $HOME/.local/bin/takeshot --in5
+
+# Take ss in 10 second
+shift + Print	
+	sh $HOME/.local/bin/takeshot --in10
+
+# ss of active window
+ctrl + Print
+	sh $HOME/.local/bin/takeshot --win
+
+# Take ss of area
+ctrl + p
+	sh $HOME/.local/bin/takeshot --area
+	
+# Change transparency on focused window
+ctrl + alt {plus,minus,t}
+		{picom-trans -c -o +3, picom-trans -c -o -1, picom-trans -c -d}
+        
+        
+# System power off reboot lock 
+ctrl + alt + {p,r,l}
+        {systemctl poweroff, systemctl reboot,betterlockscreen -l}
+        
+        
+# Menu aplicaciones
+alt + space
+	rofi -no-lazy-grab -show drun -theme $HOME/.config/bspwm/rices/$RICETHEME/launcher.rasi
+	
+# Theme Selector
+shift + super + @space
+	RiceSelector
+
+super + w
+	sh ~/.config/rofi/wifi/wifi
+
+# Reload sxhkd
+super + Escape
+	pkill -USR1 -x sxhkd; notify-send 'Reloaded'
+	
+# Random wallpaper
+shift+ alt + w
+	RandomWall
+
+# Rofi Emoji
+alt + shift + e
+	rofi -show emoji
+
+# program run
+super + r
+	rofi -show {run}
+
+#
+# bspwm hotkeys
+#
+	
+# Close App
+super + {_,shift + }q
+	bspc node -{c,k}
+
+# kill window
+ctrl + q
+    xkill
+
+# Quit/Restart bspwm
+ctrl + shift + {q,r}
+	bspc {quit,wm -r}
+	
+# Split horizontal, vertical or cancel
+super + {e,v,0,9,k}
+	bspc node -p {east,south,north,west,cancel}
+
+# Preselect the ratio
+super + ctrl + {1-9}
+	bspc node -o 0.{1-9}
+
+# Fullscreen or Monocle
+super + f
+#	bspc desktop -l next
+    bspc node -t "~"fullscreen
+
+# Toggle beetwen floating
+super + space
+    bspc node -t "~"{floating}
+
+super + {p,t}
+    bspc node -t "~"{pseudo_tiled,tiled}
+
+# Set the node flags
+super + ctrl + {m,x,y,z}
+	bspc node -g {marked,locked,sticky,private}
+
+# Send the window to another edge of the screen
+super + {_,shift + }{Left,Down,Up,Right}
+	bspc node -{f,s} {west,south,north,east}
+
+# Change focus to next window, including floating window
+alt + {_,shift + }Tab
+	bspc node -f {next.local,prev.local}
+
+# Switch workspace
+shift + alt + {a,d}
+	bspc desktop -f {prev.local,next.local}
+
+# Switch to last opened workspace
+super + {Tab,grave}
+	bspc {node,desktop} -f last
+
+# Send focused window to another workspace from numpad
+super + {_,shift + }KP_{1-6}
+	bspc {desktop -f,node -d} '^{1-6}'
+
+# Send focused window to another workspace
+super + {_,shift + }{1-6}
+	bspc {desktop -f,node -d} '^{1-6}'
+
+# Expanding windows
+super + ctrl + {Left,Right,Up,Down}
+	bspc node -z {left -20 0,right 20 0,top 0 -20,bottom 0 20}
+	
+## Shrinking windows
+super + alt + {Left,Right,Up,Down}
+	bspc node -z {left 20 0,right -20 0,top 0 20,bottom 0 -20}
+	
+## Move floating windows
+alt + shift + {Left,Down,Up,Right}
+	bspc node -v {-20 0,0 20,0 -20,20 0}	
+	
+# Manage brightness
+XF86MonBrightness{Up,Down}
+    sh $HOME/.local/bin/brightness {up,down}
+
+## Media keys
+XF86AudioRaiseVolume
+	pactl set-sink-volume 0 +5%
+
+XF86AudioLowerVolume
+	pactl set-sink-volume 0 -5%
+
+XF86AudioMute
+	pactl set-sink-mute 0 toggle
+
+XF86AudioPlay 
+        playerctl play-pause
+        
+XF86AudioStop
+        playerctl stop
+        
+XF86AudioNext 
+        playerctl next
+        
+XF86AudioPrev 
+        playerctl previous
