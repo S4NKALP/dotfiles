@@ -14,8 +14,9 @@
 |Bar|[Polybar](https://github.com/polybar/polybar)|
 |Menu|[Rofi](https://github.com/davatorium/rofi)|
 |Compositor|[Picom](https://archlinux.org/packages/community/x86_64/picom/)|
-|Terminal|[Termite](https://aur.archlinux.org/termite.git)|
+|Terminal|[Alacritty](https://aur.archlinux.org/termite.git)|
 |Widgets|[ElKowars wacky widgets ](https://github.com/elkowar/eww)|
+|Browser|[Firefox & Google-Chrome]
 
 ## 🚀 Features
 * **Change themes on the fly:** 12 different Rices now!.
