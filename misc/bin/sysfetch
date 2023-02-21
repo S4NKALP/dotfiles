@@ -2,7 +2,7 @@
 
 # sysfetch
 # Thanks to u/x_ero for his sysinfo script
-# Modified by gh0stzk https://github.com/gh0stzk/dotfiles
+# Modified by S4NKALP https://github.com/S4NKALP/dotfiles
 
 # color escapes
 CBK=$(tput setaf 0)
@@ -81,20 +81,17 @@ done
 
 # Ascii art arms
 cat <<EOF
-$PADCC$CBD                   $CBL.
-$PADCC                  $CBL/ $CMA\\
-$PADCC                 $CBL/   $CMA\\
-$PADCC                $CBL/^.   $CMA\\
-$PADCC               $CBL/  .$CWH-$CMA.  \\
-$PADCC              $CBL/  (   $CMA) _\\
-$PADCC             $CBL/ _.~   $CMA~._^\\
-$PADCC            $CBL/.^         $CMA^.\\
+$PADCC                   ██           
+$PADCC                  ████          
+$PADCC                  ▀████         
+$PADCC                ██▄ ████        
+$PADCC               ██████████       
+$PADCC              ████▀  ▀████      
+$PADCC             ████▀    ▀████     
+$PADCC            ▀▀▀          ▀▀▀    
 
 EOF
 
-BAR=" ▓▒░"
-OUTT="$CBK$BAR$CRE$BAR$CGR$BAR$CYE$BAR$CBL$BAR$CMA$BAR$CCY$BAR$CWH$BAR$CNC"
-printf "%s%b\n\n" "$PADC" "$OUTT"
 
 
 # greetings
@@ -104,43 +101,17 @@ printf "%s%b\n\n" "$PADC" "               up $CCY$CBD$uptm$CNC"
 
 # environment
 printf "%s%b" "$PADC" "$CRE        distro $CWH⏹ $CNC$distro\n"
-printf "%s%b" "$PADC" "$CBL        kernel $CWH⏹ $CNC$(uname -r)\n"
+printf "%s%b" "$PADC" "$CBL        kernel $CWH⏹ $CNC$(uname -r | cut -d '-' -f1)\n"
 printf "%s%b" "$PADC" "$CMA      packages $CWH⏹ $CNC$(get_pkg_count)\n"
 printf "%s%b" "$PADC" "$CGR         shell $CWH⏹ $CNC${SHELL##*/}\n"
 printf "%s%b" "$PADC" "$CYE          term $CWH⏹ $CNC$term\n"
 printf "%s%b" "$PADC" "$CCY            wm $CWH⏹ $CNC${wm}\n"
-printf "%s%b" "$PADC" "$CBL          disk $CWH⏹ $CNC$storage used\n"
 printf " $CNC\n"
 
-# progress bar
-draw() {
-	perc=$1
-	size=$2
-	inc=$((perc * size / 100))
-	out=
-	color="$3"
-	for v in $(seq 0 $((size - 1))); do
-		test "$v" -le "$inc" &&
-			out="${out}\e[1;${color}m${FULL}" ||
-			out="${out}\e[0;37m${CWH}${EMPTY}"
-	done
-	printf $out
-}
-
-# cpu
-cpu=$(top -bn1 | grep "Cpu(s)" | awk '{print $2}' | cut -d'.' -f1)
-c_lvl=`printf $cpu`
-printf "%b" "$PADC"
-printf "   $CMA%-4s $CWH%-5s %-25s \n" " cpu" "$c_lvl%" $(draw $c_lvl 15 35)
-
-# ram
-ram=$(free | awk '/Mem:/ {print int($3/$2 * 100.0)}')
-printf "%b" "$CNC" "$PADC"
-printf "   $CMA%-4s $CWH%-5s %-25s \n" " ram" "$ram%" $(draw $ram 15 35)
-    
 # hide the cursor and wait for user input
 tput civis
 read -n 1
 
 # give the cursor back
-tput cnorm
+tput cnorm    
+
