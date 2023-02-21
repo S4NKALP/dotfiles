@@ -1,11 +1,9 @@
 # BSPWM | Polybar themes collection with Theme Selector
 
-## Puedes leer esta pagina en español [AQUI](INICIO.md)
-
 ## 🌿 Information
 12 different themes for BSPWM and Polybar. With a theme selector to change on the fly. 
 
-https://user-images.githubusercontent.com/67278339/211363959-9182ecb7-e56e-4598-afed-f352c5d2979e.mp4
+Highly modified Only Zombi3
 
 ## Rice Menu
 <img src="assets/rs.webp" alt="Rice Menu" align="right" width="400px">
@@ -22,7 +20,7 @@ https://user-images.githubusercontent.com/67278339/211363959-9182ecb7-e56e-4598-
 ## 🚀 Features
 * **Change themes on the fly:** 12 different Rices now!.
 
-* **Theme Selector:** <code>Alt + Space bar</code> to launch it.
+* **Theme Selector:** <code>Super + Shift + Space bar</code> to launch it.
 
 * **Random wallpaper:**  Every time you switch between rices or reload bspwm with <code>super + alt + r</code> a new wallpaper is set depending on the rice you are on.
 
@@ -33,25 +31,6 @@ https://user-images.githubusercontent.com/67278339/211363959-9182ecb7-e56e-4598-
 * **Change transparency on the fly:** 
 Increase and decrease transparency in focused or selected window.
 
-**And more..**
-
-<table align="center">
-   <tr>
-      <th align="center">
-         <sup><sub>:warning: WARNING :warning:</sub></sup>
-      </th>
-   </tr>
-   <tr>
-      <td align="center">
-      
-      
-      
-     THIS DOTFILES ARE CONFIGURED AT 1600x900 WITH 96 DPI! 1 MONITOR
-     SOME STUFF MIGHT BREAK ON LOWER OR HIGHER
-     RESOLUTIONS BUT WILL STILL WORK!
-     
-   </tr>
-   </table>
 
 ## 🎨 The themes...
 So yes... i called the Rices with the names of some of my ex girlfriends. 
@@ -294,8 +273,8 @@ chmod +x RiceInstaller
 ## Troubleshooting
 * **Weather module is showing wrong values**
 
-Yes the values are in my city "Mexico City" you need to edit ~/.config/bspwm/scripts/WeatherMini to set your city
-In line 3 you will find this line weather=$(curl -s wttr.in/**Mexico**?format=3) You need to write your city, or postal code, please refer to the [wttr.in Help](https://wttr.in/:help)
+Yes the values are in my city "Kohalpur" you need to edit ~/.config/bspwm/scripts/WeatherMini to set your city
+In line 3 you will find this line weather=$(curl -s wttr.in/**Kohalpur**?format=3) You need to write your city, or postal code, please refer to the [wttr.in Help](https://wttr.in/:help)
 
 For the eww widget in z0mbi3 rice you need to edit ~/.config/bspwm/scripts/weather in line 12 you need to change the name of your city, you can get it from [openweathermap](https://openweathermap.org/)
 
