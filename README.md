@@ -16,7 +16,7 @@
 |Compositor|[Picom](https://archlinux.org/packages/community/x86_64/picom/)|
 |Terminal|[Alacritty](https://aur.archlinux.org/termite.git)|
 |Widgets|[ElKowars wacky widgets ](https://github.com/elkowar/eww)|
-|Browser|[Firefox & Google-Chrome]
+|Browser|Firefox & Google-Chrome
 
 ## 🚀 Features
 * **Change themes on the fly:** 12 different Rices now!.
