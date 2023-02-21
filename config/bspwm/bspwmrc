@@ -168,7 +168,7 @@ case $RICETHEME in
 		  
 		z0mbi3)
 		
-		  SetBspwmConf "$BSPWM_BORDER" 5 5 "#3d414f" "#3d414f" "#3d414f" "#90ceaa" 55 5 "$BSPWM_GAP"
+		  SetBspwmConf "$BSPWM_BORDER" 1 1 "#3d414f" "#3d414f" "#3d414f" "#90ceaa" 55 1 "$BSPWM_GAP"
 		  
 		  # Kill any running instances of bspc to prevent multiple
 		  # instances of "workspaces" script in eww rices to run at once
