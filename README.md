@@ -3,7 +3,7 @@
 ## 🌿 Information
 12 different themes for BSPWM and Polybar. With a theme selector to change on the fly. 
 
-## Highly modified Only Z0mbi3. Only Z0mbi3 will be maintain.
+## I will only maintain Z0mbi3
 
 ## Rice Menu
 <img src="assets/rs.webp" alt="Rice Menu" align="right" width="400px">
