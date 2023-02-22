@@ -36,7 +36,7 @@ $archlogo: #0f94d2;
 .works {
   font-family: "Material Design Icons Desktop";
   padding: 0.5rem 0.7rem 0.5rem 0.7rem;
-  background-color: #0f0f17;
+  background-color: $background;
   border-radius: 5px;
 }
 
@@ -61,6 +61,7 @@ $archlogo: #0f94d2;
 // icons info
 .control {
   padding: 0.5rem;
+  background-color: $background;
   border-radius: 5px;
 }
 
@@ -90,7 +91,7 @@ scale trough {
   all: unset;
   background-color: $background;
   border-radius: 5px;
-  min-height: 50px;
+  min-height: 80px;
   min-width: 10px;
   margin: 0.3rem 0 0.3rem 0.1rem;
 }
@@ -190,3 +191,4 @@ calendar:indeterminate {
 .button-lock {
   color: $blue;
 }
+
