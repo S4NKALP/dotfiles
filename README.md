@@ -1,4 +1,4 @@
-# BSPWM | Polybar themes collection with Theme Selector
+# BSPWM | Polybar themes collection with Theme Selector. I didn't rice this. I only Modified.
 
 ## 🌿 Information
 12 different themes for BSPWM and Polybar. With a theme selector to change on the fly. 
@@ -260,6 +260,6 @@ All workflows where i stole things to inspire me or for editing, its impossile t
 - Eww doesn't have a way of using a system tray but this little polybar hack make the trick. Thanks to [ikz87](https://github.com/ikz87).
 
 ## modification:
-
+- Modification of z0mbi3 rice's bar 
 - Modification with zombie theme
 - Removed termite and added alacritty
