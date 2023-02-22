@@ -22,8 +22,7 @@
 (defpoll art		:interval "1s"  "music coverloc")
 (defpoll title		:interval "1s"  "music title")
 (defpoll artist		:interval "1s"  "music artist")
-(defpoll playpause	:interval "1s"  "music status icon")
-
+(defpoll playpause	:interval "1s"  "music statusicon")
 
 ;; ** Widgets ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
@@ -40,11 +39,11 @@
           (box :class "pfpapps" :halign "center" :valign "center" :hexpand true :spacing 20
 			   (button :class "launcher-btn"
                        :onclick "google-chrome-stable & disown"
-                       :tooltip "google-chrome-stable"
+                       :tooltip "Google-Chrome"
                        "󰇧")
                (button :class "launcher-btn"
                        :onclick "Term --of"
-                       :tooltip "System Fetch"
+                       :tooltip "Sys Fetch"
                        "󰚌")
                (button :class "launcher-btn"
                        :onclick "thunar ~ & disown"
@@ -55,7 +54,7 @@
                        :tooltip "Terminal"
                        "")
                (button :class "launcher-btn"
-                       :onclick "geany & disown"
+                       :onclick "gedit & disown"
                        :tooltip "Editor"
                        ""))
         ))
