@@ -2,7 +2,6 @@
   all: unset;
 }
 
-$background: #1A1B26;
 $bg: #0d0f18;
 $bg-alt: #151720;
 $fg: #c0caf5;
@@ -16,7 +15,6 @@ $magenta: #c296eb;
 $cyan: #93cee9;
 $white: $fg;
 $archlogo: #0f94d2;
-$foreground: #a9b1d6;
 
 .profilebox {
   background-color: $bg-alt;
@@ -239,4 +237,3 @@ scale trough highlight {
 .scale-fs trough highlight {
   background: linear-gradient(to right, $yellow, $fg);
 }
-
