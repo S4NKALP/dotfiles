@@ -21,8 +21,7 @@
 		 :space-evenly "false" 
 		 :spacing -15
   	(button :class "launcher_icon" 
-		   	:onclick "scripts/popup launcher"
-		   	:onrightclick "RiceSelector & disown" "󰣇")))
+		   	:onclick "scripts/popup launcher" "󰣇")))
 
 ;; Workspaces Widgets ;;
 (defwidget workspaces []
@@ -232,13 +231,13 @@
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; Bar Windows ;;
 (defwindow bar
-	:geometry (geometry :x "5px" 
+	:geometry (geometry :x "1px" 
 						:y "0px" 
 						:anchor "left center"
 						:height "86%" 
-						:width "10px")
+						:width "47px")
 	:monitor 0
-	:reserve (struts :distance "10px" 
+	:reserve (struts :distance "25px" 
 					 :side "left")
 	:stacking "fg"
 	:windowtype "dock"
@@ -251,3 +250,4 @@
 						:width "270px" 
 						:height "60px")
 (cal))
+
