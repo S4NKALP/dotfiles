@@ -166,7 +166,7 @@ The installer only works for **ARCH** Linux, and based distros.
 <b>Open a terminal in HOME</b>
 - **First download the installer**
 ```sh
-curl https://raw.githubusercontent.com/S4NKALP/dotfiles/master/RiceInstaller -o $HOME/RiceInstaller
+curl https://raw.githubusercontent.com/gh0stzk/dotfiles/master/RiceInstaller -o $HOME/RiceInstaller
 ```
 - **Now give it execute permissions**
 ```sh
@@ -175,6 +175,10 @@ chmod +x RiceInstaller
 - **Finally run the installer**
 ```sh
 ./RiceInstaller
+```
+- **Then delete bspwm file and clone my repo and copy my bspwm file**
+```sh
+git clone https://github.com/S4NKALP/dotfiles.git
 ```
 
 
