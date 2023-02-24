@@ -134,7 +134,8 @@ So yes... i called the Rices with the names of some of my ex girlfriends.
 
 |<img src="assets/Screenshot_2023-02-21-03-40-41_1920x1080.png" alt="z0mbi3 Rice" align="center" width="600px">|
 
-
+####  New Dashboard
+|<img src="assests/Screenshot_2023-02-24-08-34-19_1920x1080.png" alt="New Dashboard" align="center" width="600px">|
 
 
 
