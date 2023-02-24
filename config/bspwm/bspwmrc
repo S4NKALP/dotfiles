@@ -75,7 +75,7 @@ case $RICETHEME in
 		  		  
 		  killeww
 		  launch polybar -q emi-bar -c ${polydir}/config.ini
-		  launch dunst -config ${bspdir}/dunstrc-dark 
+		  launch dunst -config ${bspdir}/dunstrc
 		  
 		  ;;
 			
@@ -85,7 +85,7 @@ case $RICETHEME in
 		  
 		  killeww
 		  launch polybar -q main -c ${polydir}/config.ini
-		  launch dunst -config ${bspdir}/dunstrc-dark
+		  launch dunst -config ${bspdir}/dunstrc
 		  
 		  ;;
 		    
@@ -95,7 +95,7 @@ case $RICETHEME in
 		  
 		  killeww
 		  launch polybar -q aline-bar -c ${polydir}/config.ini
-		  launch dunst -config ${bspdir}/dunstrc-light
+		  launch dunst -config ${bspdir}/dunstrc
 		  
 		  ;;
 		  
@@ -105,7 +105,7 @@ case $RICETHEME in
 		  
 		  killeww
 		  launch polybar -q isa-bar -c ${polydir}/config.ini
-		  launch dunst -config ${bspdir}/dunstrc-dark
+		  launch dunst -config ${bspdir}/dunstrc
 		  
 		  ;;
 		  
@@ -116,7 +116,7 @@ case $RICETHEME in
 		  killeww
 		  launch polybar -q cyn-bar -c ${polydir}/config.ini
 		  polybar -q cyn-bar2 -c ${polydir}/config.ini &
-		  launch dunst -config ${bspdir}/dunstrc-dark
+		  launch dunst -config ${bspdir}/dunstrc
 		  
 		  ;;
 		  
@@ -126,7 +126,7 @@ case $RICETHEME in
 
 		  killeww
 		  launch polybar -q cata-bar -c ${polydir}/config.ini
-		  launch dunst -config ${bspdir}/dunstrc-dark
+		  launch dunst -config ${bspdir}/dunstrc
 		  
 		  ;;
 		
@@ -137,7 +137,7 @@ case $RICETHEME in
 		  killeww
 		  launch polybar -q mel-bar -c ${polydir}/config.ini
 		  polybar -q mel2-bar -c ${polydir}/config.ini &
-		  launch dunst -config ${bspdir}/dunstrc-dark 
+		  launch dunst -config ${bspdir}/dunstrc 
 		  
 		  ;;
 		  
@@ -152,7 +152,7 @@ case $RICETHEME in
 		  polybar -q pam4 -c ${polydir}/config.ini &
 		  polybar -q pam5 -c ${polydir}/config.ini &
 		  polybar -q pam6 -c ${polydir}/config.ini &
-		  launch dunst -config ${bspdir}/dunstrc-dark
+		  launch dunst -config ${bspdir}/dunstrc
 		  
 		  ;;
 		  
@@ -162,13 +162,13 @@ case $RICETHEME in
 		  
 		  killeww
 		  launch polybar -q cristina-bar -c ${polydir}/config.ini
-		  launch dunst -config ${bspdir}/dunstrc-dark
+		  launch dunst -config ${bspdir}/dunstrc
 		  
 		  ;;
 		  
 		z0mbi3)
 		
-		  SetBspwmConf "$BSPWM_BORDER" 1 1 "#3d414f" "#3d414f" "#3d414f" "#90ceaa" 55 1 "$BSPWM_GAP"
+		  SetBspwmConf "$BSPWM_BORDER" 1 1 "#3d414f" "#3d414f" "#3d414f" "#90ceaa" 53 1 "$BSPWM_GAP"
 		  
 		  # Kill any running instances of bspc to prevent multiple
 		  # instances of "workspaces" script in eww rices to run at once
@@ -176,7 +176,7 @@ case $RICETHEME in
 		  
 		  launch eww -c $HOME/.config/bspwm/rices/z0mbi3/bar open bar
 		  launch polybar -q tray -c ~/.config/bspwm/rices/z0mbi3/bar/polybar_tray.ini
-		  launch dunst -config ${bspdir}/dunstrc-dark
+		  launch dunst -config ${bspdir}/dunstrc
 		  
 		  ;;
 		  
@@ -188,7 +188,7 @@ case $RICETHEME in
 		  launch eww -c $HOME/.config/bspwm/rices/karla/bar open bar
 		  launch polybar -q karla-bar -c ${polydir}/config.ini
 		  polybar -q karla-bar2 -c ${polydir}/config.ini &
-		  launch dunst -config ${bspdir}/dunstrc-light
+		  launch dunst -config ${bspdir}/dunstrc
 		  
 		  ;;
 		  
@@ -215,8 +215,8 @@ bspc config external_rules_command ~/.config/bspwm/scripts/ExternalRules
 
 bspc config single_monocle                true
 bspc config split_ratio                   0.5
-bspc config borderless_monocle            false
-bspc config gapless_monocle               false
+bspc config borderless_monocle            true
+bspc config gapless_monocle               true
 bspc config focus_follows_pointer         true
 bspc config center_pseudo_tiled			  true
 

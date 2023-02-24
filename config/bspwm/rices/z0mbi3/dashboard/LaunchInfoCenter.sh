@@ -2,7 +2,7 @@
 
 # Author 	 -  z0mbi3
 # Source 	 -  https://github.com/gh0stzk/dotfiles
-
+# Maintainer -  z0mbi3.zk@protonmail.com
 
 FILE="$HOME/.cache/eww_z0mbi3.dashboard"
 ewwcfg="$HOME/.config/bspwm/rices/z0mbi3/dashboard"

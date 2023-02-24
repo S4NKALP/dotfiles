@@ -73,6 +73,5 @@ chosen="$(printf "$options" | $rofi_command -dmenu)"
 				cat <<< "z0mbi3" > ${cfg_file}
 				bspc wm -r
 				;;				
-
 		esac
 	

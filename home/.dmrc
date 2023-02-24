@@ -1,0 +1,3 @@
+# Set Default Session #
+[Desktop]
+Session=bspwm

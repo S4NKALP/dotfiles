@@ -20,7 +20,7 @@ function hide() {
 		polybar-msg cmd hide | bspc config top_padding 5 | bspc config bottom_padding 5
 		
 	elif [[ "${RICETHEME}" == z0mbi3 ]]; then
-		eww -c $HOME/.config/bspwm/rices/z0mbi3/bar close bar | bspc config left_padding 5
+		eww -c $HOME/.config/bspwm/rices/z0mbi3/bar close bar | bspc config left_padding 0
 		
 	elif [[ "${RICETHEME}" == andrea ]]; then
 		eww -c $HOME/.config/bspwm/rices/andrea/arin close-all | bspc config top_padding 5
@@ -39,10 +39,10 @@ function unhide() {
 		polybar-msg cmd show | bspc config top_padding 60
 		
 	elif [[ "${RICETHEME}" == aline ]]; then
-		polybar-msg cmd show | bspc config top_padding 55
+		polybar-msg cmd show | bspc config top_padding 50
 		
 	elif [[ "${RICETHEME}" == silvia ]]; then
-		polybar-msg cmd show | bspc config top_padding 50
+		polybar-msg cmd show | bspc config top_padding 45
 		
 	elif [[ "${RICETHEME}" == isabel ]]; then
 		polybar-msg cmd show | bspc config bottom_padding 45
@@ -51,13 +51,13 @@ function unhide() {
 		polybar-msg cmd show | bspc config top_padding 42 | bspc config bottom_padding 40
 		
 	elif [[ "${RICETHEME}" == cynthia ]]; then
-		polybar-msg cmd show | bspc config top_padding 50 | bspc config bottom_padding 50
+		polybar-msg cmd show | bspc config top_padding 50 | bspc config bottom_padding 45
 		
 	elif [[ "${RICETHEME}" == cristina ]]; then
-		polybar-msg cmd show | bspc config bottom_padding 60
+		polybar-msg cmd show | bspc config bottom_padding 55
 		
 	elif [[ "${RICETHEME}" == z0mbi3 ]]; then
-		eww -c $HOME/.config/bspwm/rices/$RICETHEME/bar open bar | bspc config left_padding 80
+		eww -c $HOME/.config/bspwm/rices/$RICETHEME/bar open bar | bspc config left_padding 53
 		
 	elif [[ "${RICETHEME}" == karla ]]; then
 		eww -c $HOME/.config/bspwm/rices/$RICETHEME/bar open bar & polybar-msg cmd show | bspc config top_padding 65

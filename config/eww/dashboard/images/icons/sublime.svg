@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?><!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
+<svg width="800px" height="800px" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+<circle cx="16" cy="16" r="14" fill="#4B4B4B"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M23.9978 16.0579C23.9978 15.8235 23.8178 15.6883 23.5969 15.7555L8.40089 20.3934C8.17956 20.461 8 20.7061 8 20.9401V25.6803C8 25.9147 8.17956 26.0503 8.40089 25.9827L23.5969 21.3452C23.8178 21.2776 23.9978 21.0325 23.9978 20.7981V16.0579Z" fill="url(#paint0_linear_87_8106)"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M8 15.9092C8 16.1436 8.17956 16.3887 8.40089 16.4563L23.5991 21.0947C23.8204 21.1623 24 21.0267 24 20.7927V16.0521C24 15.8181 23.8204 15.573 23.5991 15.5054L8.40089 10.867C8.17956 10.7994 8 10.9346 8 11.169V15.9092V15.9092Z" fill="#FF9800"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M23.9978 6.31981C23.9978 6.08539 23.8178 5.94979 23.5969 6.01738L8.40089 10.6549C8.17956 10.7225 8 10.9676 8 11.202V15.9422C8 16.1766 8.17956 16.3118 8.40089 16.2446L23.5969 11.6067C23.8178 11.5391 23.9978 11.294 23.9978 11.06V6.31981Z" fill="#FF9800"/>
+<defs>
+<linearGradient id="paint0_linear_87_8106" x1="16.8175" y1="22.8745" x2="18.5031" y2="18.5899" gradientUnits="userSpaceOnUse">
+<stop stop-color="#FF9700"/>
+<stop offset="0.53" stop-color="#F48E00"/>
+<stop offset="1" stop-color="#D06F00"/>
+</linearGradient>
+</defs>
+</svg>

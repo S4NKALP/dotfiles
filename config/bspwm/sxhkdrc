@@ -12,15 +12,36 @@ super + x
 alt + x
 	Term --oft
 
+# Rofi Menu Application
+alt + @space
+	sh ~/.config/bspwm/rofi/bin/launcher
+
+# Open/close dashboard
+super + d
+	sh ~/.config/eww/dashboard/launch_dashboard
+	
 #cheatsheet
 super + F1
-	sh ~/.config/bspwm/show_help.sh
+	sh ~/.config/bspwm/scripts/show_help.sh
+
+network manager
+super + n
+	nmd
+
+# Rofi Menus/Applets
+super + {w,m,p,r,s,i}
+	sh ~/.config/bspwm/rofi/bin/{windows,mpd,powermenu,asroot,screenshot,network}
+
+# Hide/Unhide Window
+super + shift + m
+	winmask	
+	
 # Apps
 alt + {f,c,s,g,v,o,d,e,n,z,r,t,w,m}
        {firefox, \
 	    code, \
 	    subl, \
-	    gimp, \
+		github-desktop, \
 	    virt-manager, \
 	    obs, \
 	    discord, \
@@ -39,15 +60,15 @@ super + h
 super + u 
 		HideBar -u
 
-# Take a ss
+# Screenshot
 Print
 	sh $HOME/.local/bin/takeshot --now
 	
-# Take ss in 5 second
+# ss in 5 second
 alt + Print	
 	sh $HOME/.local/bin/takeshot --in5
 
-# Take ss in 10 second
+# ss in 10 second
 shift + Print	
 	sh $HOME/.local/bin/takeshot --in10
 
@@ -70,14 +91,14 @@ ctrl + alt + {p,r,l}
         
         
 # Menu aplicaciones
-alt + space
-	rofi -no-lazy-grab -show drun -theme $HOME/.config/bspwm/rices/$RICETHEME/launcher.rasi
+#alt + space 
+#	rofi -no-lazy-grab -show drun -theme $HOME/.config/bspwm/rices/$RICETHEME/launcher.rasi
 	
 # Theme Selector
 shift + super + @space
 	RiceSelector
 
-super + w
+super + e
 	sh ~/.config/rofi/wifi/wifi
 
 # Reload sxhkd
@@ -196,4 +217,4 @@ XF86AudioNext
         playerctl next
         
 XF86AudioPrev 
-        playerctl previous
+        playerctl previousAA
